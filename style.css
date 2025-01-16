@@ -7,6 +7,8 @@ body {
   .header {
     background-color: #eaf7ff;
     border-bottom: 1px solid #ddd;
+    position:fixed;
+    width: 100%;
   }
   
   .hero-section {
@@ -124,3 +126,212 @@ body {
       align-items: center;
   }
 }
+
+/* 
+Add this section after the "Teeth alignment issues we can fix" section */
+
+.aligners-info .title {
+  font-size: 2rem;
+  color: #212529;
+  font-weight: 700;
+}
+
+.aligners-info p {
+  font-size: 1.3rem;
+  color: #6c757d;
+  text-align: left;
+  font-weight: 500;
+}
+
+.aligners-info .video-fluid {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /* border: 2px solid; */
+}
+
+@media (max-width: 768px) {
+  .aligners-info .title {
+    font-size: 1.5rem;
+  }
+
+  .aligners-info p {
+    font-size: 0.9rem;
+  }
+
+  .aligners-info .video-fluid {
+    max-height: 200px;
+  }
+}
+
+
+/* Perks Comparison Section */
+.perks-comparison {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+.comparison-table{
+  width: 80%;
+}
+.perks-comparison h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table Styling */
+.comparison-table {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr; /* Column widths: 60%, 20%, 20% */
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: contents;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-row {
+  display: contents;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 15px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Remove the last border in rows and cells */
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comparison-table {
+    grid-template-columns: 1fr; /* Make all columns stack vertically */
+  }
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack headers */
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack rows */
+  }
+
+  .table-cell {
+    text-align: left;
+    border-right: none; /* Remove borders in stacked mode */
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+  }
+
+  .table-cell:last-child {
+    border-bottom: none; /* Remove bottom border for the last cell */
+  }
+}
+
+
+
+
+
+/* Why Choose Section */
+.why-choose-section {
+  background-color: #daeff4; /* Light background for the section */
+}
+
+.why-choose-section h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.why-choose-section .box {
+  background-color: #ffffff;
+  border: 2px solid #ddd; /* Add border to the boxes */
+  border-radius: 10px; /* Smooth corners */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-choose-section .box p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  font-weight: bold;
+}
+
+.why-choose-section .box:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-choose-section .box {
+    margin-bottom: 20px; /* Add spacing between boxes for mobile */
+  }
+}
+
+
+
+.real-smiles {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.real-smiles h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.smile-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.smile-box .description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .smile-box {
+    margin-bottom: 20px;
+  }
+}
+
